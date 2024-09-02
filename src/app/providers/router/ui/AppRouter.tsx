@@ -1,7 +1,6 @@
 import {Route, Routes} from "react-router-dom";
 import React, {Suspense} from "react";
 import {routeConfig} from "shared/config/routeConfig/routeConfig";
-import path from "path";
 
 const AppRouter = () => {
     return (
@@ -13,7 +12,9 @@ const AppRouter = () => {
                         path={path}
                         element={(
                             <Suspense fallback={<div>Loading...</div>}>
-                                {element}
+                                <div className="page-wrapper">
+                                    {element}
+                                </div>
                             </Suspense>
                         )}
                     />
