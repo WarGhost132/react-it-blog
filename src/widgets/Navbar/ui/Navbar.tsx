@@ -28,7 +28,7 @@ export const Navbar = ({ className }: NavbarProps) => {
             </Button>
             <Modal isOpen={isAuthModal} onClose={onToggleModal}>
                 {/* eslint-disable-next-line */}
-                lorem
+                {t('lorem')}
             </Modal>
         </div>
     );
