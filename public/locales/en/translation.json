@@ -13,5 +13,7 @@
   "Переключить": "Переключить",
   "Короткий язык": "En",
   "Войти": "Войти",
-  "lorem": "lorem"
+  "lorem": "lorem",
+  "increment": "increment",
+  "decrement": "decrement"
 }
