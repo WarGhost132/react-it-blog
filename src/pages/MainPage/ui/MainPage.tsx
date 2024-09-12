@@ -3,6 +3,11 @@ import { useTranslation } from 'react-i18next';
 
 const MainPage = () => {
     const { t } = useTranslation();
+    const [value, setValue] = React.useState('');
+
+    const onChange = (val: string) => {
+        setValue(val);
+    };
 
     return (
         <div>
