@@ -1,5 +1,5 @@
 import { classNames } from 'shared/lib/classNames/classNames';
-import {
+import React, {
     InputHTMLAttributes, memo, useEffect, useRef, useState,
 } from 'react';
 import cls from './Input.module.scss';
