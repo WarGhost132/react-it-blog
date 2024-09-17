@@ -8,8 +8,8 @@ type HTMLInputProps = Omit<InputHTMLAttributes<HTMLInputElement>, 'value' | 'onC
 
 interface InputProps extends HTMLInputProps {
     className?: string;
-    onChange?: (value: string) => void;
     value?: string;
+    onChange?: (value: string) => void;
     autofocus?: boolean;
 }
 
@@ -18,12 +18,11 @@ export const Input = memo((props: InputProps) => {
         className,
         value,
         onChange,
+        type = 'text',
         placeholder,
         autofocus,
-        type = 'text',
         ...otherProps
     } = props;
-
     const ref = useRef<HTMLInputElement>(null);
     const [isFocused, setIsFocused] = useState(false);
     const [caretPosition, setCaretPosition] = useState(0);
@@ -61,6 +60,7 @@ export const Input = memo((props: InputProps) => {
             )}
             <div className={cls.caretWrapper}>
                 <input
+                    ref={ref}
                     type={type}
                     value={value}
                     onChange={onChangeHandler}

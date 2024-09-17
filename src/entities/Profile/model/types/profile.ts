@@ -1,14 +1,14 @@
-import { Counrty, Currency } from 'shared/const/common';
+import { Country, Currency } from 'shared/const/common';
 
 export interface Profile {
-    first: string,
-    lastname: string,
-    age: number,
+    first: string;
+    lastname: string;
+    age: 22,
     currency: Currency,
-    country: Counrty,
+    country: Country;
     city: string,
-    username: string,
-    avatar: string
+    username: string;
+    avatar: string;
 }
 
 export interface ProfileSchema {

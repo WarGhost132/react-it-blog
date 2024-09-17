@@ -14,13 +14,6 @@
     width: 100%;
 }
 
-.items {
-    margin-top: 20px;
-    margin-left: 30px;
-    display: flex;
-    flex-direction: column;
-}
-
 .lang {
     margin-left: 20px;
 }
@@ -29,6 +22,13 @@
     position: absolute;
     right: -32px;
     bottom: 32px;
+}
+
+.items {
+    margin-top: 20px;
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
 }
 
 .collapsed {
