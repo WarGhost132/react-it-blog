@@ -14,7 +14,9 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
-      "type": ["IT"],
+      "type": [
+        "IT"
+      ],
       "blocks": [
         {
           "id": "1",
@@ -95,6 +97,24 @@
       "text": "some comment 3",
       "articleId": "1",
       "userId": "1"
+    },
+    {
+      "articleId": "1",
+      "userId": "1",
+      "text": "test",
+      "id": "v28JyxK"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "zxc",
+      "id": "axkx1D8"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "Привет мир",
+      "id": "7TtF8xs"
     }
   ],
   "users": [
@@ -113,14 +133,28 @@
       "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
     }
   ],
-  "profile": {
-    "first": "Константин",
-    "lastname": "Крошин",
-    "age": 22,
-    "currency": "RUB",
-    "country": "Kazahstan",
-    "city": "Kazan",
-    "username": "admin",
-    "avatar": "https://yt3.ggpht.com/ytc/AAUvwngFzM_Rf6MNwOnFcuphoj93k7VFjlIrj-kSMxbh=s900-c-k-c0x00ffffff-no-rj"
-  }
+  "profile": [
+    {
+      "id": "1",
+      "first": "Константин",
+      "lastname": "Крошин",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Kazahstan",
+      "city": "Kazan",
+      "username": "admin",
+      "avatar": "https://i.pinimg.com/originals/68/89/4b/68894b8ec941027bb8e48aa30abb9b88.jpg"
+    },
+    {
+      "id": "2",
+      "first": "Адам",
+      "lastname": "Френсис",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Kazahstan",
+      "city": "Kazan",
+      "username": "user-tet",
+      "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
+    }
+  ]
 }
