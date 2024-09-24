@@ -14,6 +14,7 @@
       "img": "https://teknotower.com/wp-content/uploads/2020/11/js.png",
       "views": 1022,
       "createdAt": "26.02.2022",
+      "userId": "1",
       "type": [
         "IT"
       ],
@@ -115,6 +116,12 @@
       "userId": "2",
       "text": "Привет мир",
       "id": "7TtF8xs"
+    },
+    {
+      "articleId": "1",
+      "userId": "2",
+      "text": "test",
+      "id": "Dyv7yg1"
     }
   ],
   "users": [
