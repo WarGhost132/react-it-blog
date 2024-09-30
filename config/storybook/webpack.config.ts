@@ -1,4 +1,6 @@
+// @ts-ignore
 import webpack, { DefinePlugin, RuleSetRule } from 'webpack';
+// @ts-ignore
 import path from 'path';
 import { buildCssLoader } from '../build/loaders/buildCssLoader';
 import { BuildPaths } from '../build/types/config';
@@ -9,6 +11,8 @@ export default ({ config }: {config: webpack.Configuration}) => {
         html: '',
         entry: '',
         src: path.resolve(__dirname, '..', '..', 'src'),
+        locales: '',
+        buildLocales: '',
     };
     config.resolve!.modules!.push(paths.src);
     config.resolve!.extensions!.push('.ts', '.tsx');
