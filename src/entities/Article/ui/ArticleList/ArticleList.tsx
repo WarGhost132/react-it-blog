@@ -39,7 +39,7 @@ export const ArticleList = memo((props: ArticleListProps) => {
     const rowCount = isBig ? articles.length : Math.ceil(articles.length / itemsPerRow);
 
     const rowRender = ({
-        index, isScrolling, key, style,
+        index, key, style,
     }: ListRowProps) => {
         const items = [];
         const fromIndex = index * itemsPerRow;
