@@ -1,16 +1,16 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
-import { Page } from './Page';
+import { ListBox } from './ListBox';
 
 export default {
-    title: 'widgets/Page',
-    component: Page,
+    title: 'shared/ListBox',
+    component: ListBox,
     argTypes: {
         backgroundColor: { control: 'color' },
     },
-} as ComponentMeta<typeof Page>;
+} as ComponentMeta<typeof ListBox>;
 
-const Template: ComponentStory<typeof Page> = (args) => <Page {...args} />;
+const Template: ComponentStory<typeof ListBox> = (args) => <ListBox {...args} />;
 
 export const Normal = Template.bind({});
 Normal.args = {};
