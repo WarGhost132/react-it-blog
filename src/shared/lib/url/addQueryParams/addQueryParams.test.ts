@@ -7,7 +7,7 @@ describe('shared/url/addQueryParams', () => {
         });
         expect(params).toBe('?test=value');
     });
-    test('test with multiple param', () => {
+    test('test with multiple params', () => {
         const params = getQueryParams({
             test: 'value',
             second: '2',

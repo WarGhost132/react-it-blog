@@ -1,7 +1,7 @@
 import { createSlice, PayloadAction } from '@reduxjs/toolkit';
 import { fetchArticleById } from '../services/fetchArticleById/fetchArticleById';
-import { ArticleDetailsSchema } from '../types/articleDetailsSchema';
 import { Article } from '../types/article';
+import { ArticleDetailsSchema } from '../types/articleDetailsSchema';
 
 const initialState: ArticleDetailsSchema = {
     isLoading: false,
@@ -15,8 +15,6 @@ export const articleDetailsSlice = createSlice({
     reducers: {},
     extraReducers: (builder) => {
         builder
-
-            // fetchArticleById
             .addCase(fetchArticleById.pending, (state) => {
                 state.error = undefined;
                 state.isLoading = true;
@@ -35,6 +33,5 @@ export const articleDetailsSlice = createSlice({
     },
 });
 
-// Action creators are generated for each case reducer function
 export const { actions: articleDetailsActions } = articleDetailsSlice;
 export const { reducer: articleDetailsReducer } = articleDetailsSlice;

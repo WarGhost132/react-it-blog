@@ -1,27 +1,21 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { useTranslation } from 'react-i18next';
-import { Page } from 'widgets/Page/Page';
+import { Input } from 'shared/ui/Input/Input';
 import { HStack } from 'shared/ui/Stack';
 import { ListBox } from 'shared/ui/ListBox/ListBox';
+import { Page } from 'widgets/Page/Page';
 
 const MainPage = () => {
     const { t } = useTranslation();
+    const [value, setValue] = useState('');
+
+    const onChange = (val: string) => {
+        setValue(val);
+    };
 
     return (
         <Page>
             {t('Главная страница')}
-            <HStack>
-                <ListBox
-                    defaultValue={t('Выберите значение')}
-                    onChange={(value: string) => {}}
-                    value={undefined}
-                    items={[
-                        { value: '1', content: '123' },
-                        { value: '2', content: '121233', disabled: true },
-                        { value: '3', content: '1zxczc23' },
-                    ]}
-                />
-            </HStack>
         </Page>
     );
 };

@@ -1,5 +1,8 @@
 import React from 'react';
 
-const jestEmptyComponent = () => <div />;
+// eslint-disable-next-line func-names
+const jestEmptyComponent = function () {
+    return <div />;
+};
 
 export default jestEmptyComponent;

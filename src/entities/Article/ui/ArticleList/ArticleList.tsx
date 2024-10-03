@@ -6,21 +6,21 @@ import { List, ListRowProps, WindowScroller } from 'react-virtualized';
 import { PAGE_ID } from 'widgets/Page/Page';
 import { ArticleListItemSkeleton } from '../ArticleListItem/ArticleListItemSkeleton';
 import { ArticleListItem } from '../ArticleListItem/ArticleListItem';
-import { Article, ArticleView } from '../../model/types/article';
 import cls from './ArticleList.module.scss';
+import { Article, ArticleView } from '../../model/types/article';
 
 interface ArticleListProps {
     className?: string;
-    articles: Article[];
+    articles: Article[]
     isLoading?: boolean;
-    view?: ArticleView;
     target?: HTMLAttributeAnchorTarget;
+    view?: ArticleView;
 }
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
     .fill(0)
     .map((item, index) => (
-        <ArticleListItemSkeleton className={cls.card} view={view} key={index} />
+        <ArticleListItemSkeleton className={cls.card} key={index} view={view} />
     ));
 
 export const ArticleList = memo((props: ArticleListProps) => {
@@ -35,11 +35,11 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
     const isBig = view === ArticleView.BIG;
 
-    const itemsPerRow = isBig ? 1 : 6;
+    const itemsPerRow = isBig ? 1 : 3;
     const rowCount = isBig ? articles.length : Math.ceil(articles.length / itemsPerRow);
 
     const rowRender = ({
-        index, key, style,
+        index, isScrolling, key, style,
     }: ListRowProps) => {
         const items = [];
         const fromIndex = index * itemsPerRow;
@@ -50,9 +50,9 @@ export const ArticleList = memo((props: ArticleListProps) => {
                 <ArticleListItem
                     article={articles[i]}
                     view={view}
-                    className={cls.card}
                     target={target}
                     key={`str${i}`}
+                    className={cls.card}
                 />,
             );
         }
@@ -81,8 +81,8 @@ export const ArticleList = memo((props: ArticleListProps) => {
             scrollElement={document.getElementById(PAGE_ID) as Element}
         >
             {({
-                width,
                 height,
+                width,
                 registerChild,
                 onChildScroll,
                 isScrolling,
@@ -93,8 +93,8 @@ export const ArticleList = memo((props: ArticleListProps) => {
                     className={classNames(cls.ArticleList, {}, [className, cls[view]])}
                 >
                     <List
-                        rowCount={rowCount}
                         height={height ?? 700}
+                        rowCount={rowCount}
                         rowHeight={isBig ? 700 : 330}
                         rowRenderer={rowRender}
                         width={width ? width - 80 : 700}

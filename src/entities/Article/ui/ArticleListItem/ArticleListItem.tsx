@@ -10,11 +10,11 @@ import { Button, ButtonTheme } from 'shared/ui/Button/Button';
 import { useNavigate } from 'react-router-dom';
 import { RoutePath } from 'shared/config/routeConfig/routeConfig';
 import { AppLink } from 'shared/ui/AppLink/AppLink';
-import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import cls from './ArticleListItem.module.scss';
 import {
     Article, ArticleBlockType, ArticleTextBlock, ArticleView,
 } from '../../model/types/article';
+import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 
 interface ArticleListItemProps {
     className?: string;
@@ -62,7 +62,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
                             to={RoutePath.article_details + article.id}
                         >
                             <Button theme={ButtonTheme.OUTLINE}>
-                                {t('Читать далее')}
+                                {t('Читать далее...')}
                             </Button>
                         </AppLink>
                         {views}
@@ -80,7 +80,7 @@ export const ArticleListItem = memo((props: ArticleListItemProps) => {
         >
             <Card className={cls.card}>
                 <div className={cls.imageWrapper}>
-                    <img src={article.img} alt={article.title} className={cls.img} />
+                    <img alt={article.title} src={article.img} className={cls.img} />
                     <Text text={article.createdAt} className={cls.date} />
                 </div>
                 <div className={cls.infoWrapper}>

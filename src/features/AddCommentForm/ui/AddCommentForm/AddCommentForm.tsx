@@ -8,10 +8,7 @@ import { useAppDispatch } from 'shared/lib/hooks/useAppDispatch/useAppDispatch';
 import { DynamicModuleLoader, ReducersList } from 'shared/lib/components/DynamicModuleLoader/DynamicModuleLoader';
 import { HStack } from 'shared/ui/Stack';
 import { addCommentFormActions, addCommentFormReducer } from '../../model/slices/addCommentFormSlice';
-import {
-    getAddCommentFormError,
-    getAddCommentFormText,
-} from '../../model/selectors/addCommentFormSelectors';
+import { getAddCommentFormError, getAddCommentFormText } from '../../model/selectors/addCommentFormSelectors';
 import cls from './AddCommentForm.module.scss';
 
 export interface AddCommentFormProps {
@@ -19,7 +16,7 @@ export interface AddCommentFormProps {
     onSendComment: (text: string) => void;
 }
 
-const reducers : ReducersList = {
+const reducers: ReducersList = {
     addCommentForm: addCommentFormReducer,
 };
 
@@ -37,7 +34,7 @@ const AddCommentForm = memo((props: AddCommentFormProps) => {
     const onSendHandler = useCallback(() => {
         onSendComment(text || '');
         onCommentTextChange('');
-    }, [onSendComment, text, onCommentTextChange]);
+    }, [onCommentTextChange, onSendComment, text]);
 
     return (
         <DynamicModuleLoader reducers={reducers}>

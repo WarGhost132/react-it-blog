@@ -2,8 +2,8 @@ import { Menu } from '@headlessui/react';
 import { classNames } from 'shared/lib/classNames/classNames';
 import { Fragment, ReactNode } from 'react';
 import { DropdownDirection } from 'shared/types/ui';
-import cls from './Dropdown.module.scss';
 import { AppLink } from '../AppLink/AppLink';
+import cls from './Dropdown.module.scss';
 
 export interface DropdownItem {
     disabled?: boolean;
@@ -15,8 +15,8 @@ export interface DropdownItem {
 interface DropdownProps {
     className?: string;
     items: DropdownItem[];
-    trigger: ReactNode;
     direction?: DropdownDirection;
+    trigger: ReactNode;
 }
 
 const mapDirectionClass: Record<DropdownDirection, string> = {
@@ -28,10 +28,7 @@ const mapDirectionClass: Record<DropdownDirection, string> = {
 
 export function Dropdown(props: DropdownProps) {
     const {
-        className,
-        trigger,
-        items,
-        direction = 'bottom right',
+        className, trigger, items, direction = 'bottom right',
     } = props;
 
     const menuClasses = [mapDirectionClass[direction]];
@@ -43,7 +40,7 @@ export function Dropdown(props: DropdownProps) {
             </Menu.Button>
             <Menu.Items className={classNames(cls.menu, {}, menuClasses)}>
                 {items.map((item) => {
-                    const content = ({ active }: { active: boolean }) => (
+                    const content = ({ active }: {active: boolean}) => (
                         <button
                             type="button"
                             disabled={item.disabled}
@@ -68,6 +65,7 @@ export function Dropdown(props: DropdownProps) {
                         </Menu.Item>
                     );
                 })}
+
             </Menu.Items>
         </Menu>
     );

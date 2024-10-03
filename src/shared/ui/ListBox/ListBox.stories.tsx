@@ -1,5 +1,6 @@
 import React from 'react';
 import { ComponentStory, ComponentMeta } from '@storybook/react';
+
 import { ListBox } from './ListBox';
 
 export default {
@@ -19,9 +20,8 @@ export const Normal = Template.bind({});
 Normal.args = {
     value: '123',
     items: [
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -30,9 +30,8 @@ topLeft.args = {
     direction: 'top left',
     value: '123',
     items: [
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -41,9 +40,8 @@ topRight.args = {
     direction: 'top right',
     value: '123',
     items: [
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -52,9 +50,8 @@ bottomLeft.args = {
     direction: 'bottom left',
     value: '123',
     items: [
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };
 
@@ -63,8 +60,7 @@ bottomRight.args = {
     direction: 'bottom right',
     value: '123',
     items: [
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
-        { content: '123213123123', value: '123' },
+        { content: '1asfasfasf23', value: '123' },
+        { content: '1asfasfasf21233', value: '1232' },
     ],
 };

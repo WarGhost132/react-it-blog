@@ -1,22 +1,15 @@
-import {
-    createEntityAdapter,
-    createSlice,
-} from '@reduxjs/toolkit';
+import { createEntityAdapter, createSlice } from '@reduxjs/toolkit';
 import { StateSchema } from 'app/providers/StoreProvider';
 import { Article } from 'entities/Article';
-import {
-    fetchArticleRecommendations,
-} from '../services/fetchArticleRecommendations/fetchArticleRecommendations';
-import {
-    ArticleDetailsRecommendationsSchema,
-} from '../types/ArticleDetailsRecommendationsSchema';
+import { fetchArticleRecommendations } from '../services/fetchArticleRecommendations/fetchArticleRecommendations';
+import { ArticleDetailsRecommendationsSchema } from '../types/ArticleDetailsRecommendationsSchema';
 
 const recommendationsAdapter = createEntityAdapter<Article>({
     selectId: (article) => article.id,
 });
 
 export const getArticleRecommendations = recommendationsAdapter.getSelectors<StateSchema>(
-    (state) => state.articlesDetailsPage?.recommendations || recommendationsAdapter.getInitialState(),
+    (state) => state.articleDetailsPage?.recommendations || recommendationsAdapter.getInitialState(),
 );
 
 const articleDetailsPageRecommendationsSlice = createSlice({
@@ -27,13 +20,9 @@ const articleDetailsPageRecommendationsSlice = createSlice({
         ids: [],
         entities: {},
     }),
-    reducers: {
-
-    },
+    reducers: {},
     extraReducers: (builder) => {
         builder
-
-            // fetchArticleRecommendations
             .addCase(fetchArticleRecommendations.pending, (state) => {
                 state.error = undefined;
                 state.isLoading = true;

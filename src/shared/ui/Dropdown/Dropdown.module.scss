@@ -14,7 +14,7 @@
 .menu {
     background: var(--card-bg);
     position: absolute;
-    z-index: 100;
+    z-index: 10000;
     border-radius: 8px;
     border: 1px solid var(--primary-color);
     flex-direction: column;
@@ -45,12 +45,12 @@
     left: 0;
 }
 
-.optionsTopLeft {
-    bottom: 100%;
-    right: 0;
-}
-
 .optionsTopRight {
     bottom: 100%;
     left: 0;
+}
+
+.optionsTopLeft {
+    right: 0;
+    bottom: 100%;
 }
