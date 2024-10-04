@@ -1,9 +1,12 @@
 {
   "Ulbi TV App": "Ulbi TV App",
   "WarGhost App": "WarGhost App",
+  "admin": "admin",
+  "admin-panel": "admin-panel",
   "decrement": "decrement",
   "increment": "increment",
   "throw error": "throw error",
+  "u-vas-ne-dostupa-k-etoi-stranice": "u-vas-ne-dostupa-k-etoi-stranice",
   "Айти": "Айти",
   "Ваш возраст": "Ваш возраст",
   "Ваша фамилия": "Ваша фамилия",
