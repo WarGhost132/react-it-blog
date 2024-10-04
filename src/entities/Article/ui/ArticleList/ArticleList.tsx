@@ -11,7 +11,7 @@ import { Article, ArticleView } from '../../model/types/article';
 
 interface ArticleListProps {
     className?: string;
-    articles: Article[]
+    articles: Article[];
     isLoading?: boolean;
     target?: HTMLAttributeAnchorTarget;
     view?: ArticleView;
@@ -19,17 +19,11 @@ interface ArticleListProps {
 
 const getSkeletons = (view: ArticleView) => new Array(view === ArticleView.SMALL ? 9 : 3)
     .fill(0)
-    .map((item, index) => (
-        <ArticleListItemSkeleton className={cls.card} key={index} view={view} />
-    ));
+    .map((item, index) => <ArticleListItemSkeleton className={cls.card} key={index} view={view} />);
 
 export const ArticleList = memo((props: ArticleListProps) => {
     const {
-        className,
-        articles,
-        view = ArticleView.SMALL,
-        isLoading,
-        target,
+        className, articles, view = ArticleView.SMALL, isLoading, target,
     } = props;
     const { t } = useTranslation();
 
@@ -47,22 +41,12 @@ export const ArticleList = memo((props: ArticleListProps) => {
 
         for (let i = fromIndex; i < toIndex; i += 1) {
             items.push(
-                <ArticleListItem
-                    article={articles[i]}
-                    view={view}
-                    target={target}
-                    key={`str${i}`}
-                    className={cls.card}
-                />,
+                <ArticleListItem article={articles[i]} view={view} target={target} key={`str${i}`} className={cls.card} />,
             );
         }
 
         return (
-            <div
-                key={key}
-                style={style}
-                className={cls.row}
-            >
+            <div key={key} style={style} className={cls.row}>
                 {items}
             </div>
         );
@@ -77,21 +61,11 @@ export const ArticleList = memo((props: ArticleListProps) => {
     }
 
     return (
-        <WindowScroller
-            scrollElement={document.getElementById(PAGE_ID) as Element}
-        >
+        <WindowScroller scrollElement={document.getElementById(PAGE_ID) as Element}>
             {({
-                height,
-                width,
-                registerChild,
-                onChildScroll,
-                isScrolling,
-                scrollTop,
+                height, width, registerChild, onChildScroll, isScrolling, scrollTop,
             }) => (
-                <div
-                    ref={registerChild}
-                    className={classNames(cls.ArticleList, {}, [className, cls[view]])}
-                >
+                <div ref={registerChild} className={classNames(cls.ArticleList, {}, [className, cls[view]])}>
                     <List
                         height={height ?? 700}
                         rowCount={rowCount}
