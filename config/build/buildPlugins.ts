@@ -24,18 +24,18 @@ export function buildPlugins({
             __PROJECT__: JSON.stringify(project),
         }),
         new CopyPlugin({
-            patterns: [
-                { from: paths.locales, to: paths.buildLocales },
-            ],
+            patterns: [{ from: paths.locales, to: paths.buildLocales }],
         }),
     ];
 
     if (isDev) {
         plugins.push(new ReactRefreshWebpackPlugin());
         plugins.push(new webpack.HotModuleReplacementPlugin());
-        plugins.push(new BundleAnalyzerPlugin({
-            openAnalyzer: true,
-        }));
+        plugins.push(
+            new BundleAnalyzerPlugin({
+                openAnalyzer: false,
+            }),
+        );
     }
 
     return plugins;
