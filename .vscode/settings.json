@@ -1,14 +1,13 @@
 {
-  "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
-  "editor.formatOnType": false, // required
-  "editor.formatOnPaste": true, // optional
-  "editor.formatOnSave": true, // optional
-  "editor.formatOnSaveMode": "file", // required to format on save
-  "files.autoSave": "onFocusChange", // optional but recommended
-  "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
-  "i18n-ally.localesPaths": [
-    "public/locales",
-    "src/shared/config/i18n"
-  ],
-  "i18n-ally.keystyle": "flat"
+    "editor.defaultFormatter": "rvest.vs-code-prettier-eslint",
+    "editor.formatOnType": false, // required
+    "editor.formatOnPaste": true, // optional
+    "editor.formatOnSave": true, // optional
+    "editor.formatOnSaveMode": "file", // required to format on save
+    "files.autoSave": "onFocusChange", // optional but recommended
+    "vs-code-prettier-eslint.prettierLast": false, // set as "true" to run 'prettier' last not first
+    "i18n-ally.localesPaths": ["public/locales", "src/shared/config/i18n"],
+    "i18n-ally.keystyle": "flat",
+    "i18n-ally.sourceLanguage": "ru",
+    "i18next.i18nPaths": "f:/practice/React/production-project/build/locales,f:/practice/React/production-project/public/locales,f:/practice/React/production-project/src/shared/config/i18n"
 }
