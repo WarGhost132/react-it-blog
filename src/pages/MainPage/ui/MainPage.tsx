@@ -4,7 +4,11 @@ import { Page } from '@/widgets/Page/Page';
 const MainPage = () => {
     const { t } = useTranslation();
 
-    return <Page>{t('Главная страница')}</Page>;
+    return (
+        <Page>
+            {t('Главная страница')}
+        </Page>
+    );
 };
 
 export default MainPage;
