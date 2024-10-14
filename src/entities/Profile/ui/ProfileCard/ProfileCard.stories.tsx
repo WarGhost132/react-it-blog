@@ -22,7 +22,7 @@ Primary.args = {
     data: {
         username: 'admin',
         age: 22,
-        country: Country.Ukraine,
+        country: Country.Russia,
         lastname: 'WarGhost',
         first: 'asd',
         city: 'asf',
