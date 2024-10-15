@@ -58,6 +58,7 @@ module.exports = {
         'react/no-array-index-key': 'off',
         'arrow-body-style': 'off',
         'warghost-plugin/path-checker': ['error', { alias: '@' }],
+        'warghost-plugin/public-api-imports': ['error', { alias: '@' }],
     },
     globals: {
         __IS_DEV__: true,

@@ -7506,10 +7506,10 @@ eslint-plugin-react@^7.28.0, eslint-plugin-react@^7.29.2:
     semver "^6.3.0"
     string.prototype.matchall "^4.0.6"
 
-eslint-plugin-warghost-plugin@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.npmjs.org/eslint-plugin-warghost-plugin/-/eslint-plugin-warghost-plugin-0.0.2.tgz"
-  integrity sha512-YTIjIyTRpk6lE4jp0GnENHF9Nrp2IcoAGV8Fcc6NF4xrVbU7LUmo/EcsWmolY9FX/3Meaw3jYFl8p3TlYtw7LQ==
+eslint-plugin-warghost-plugin@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.npmjs.org/eslint-plugin-warghost-plugin/-/eslint-plugin-warghost-plugin-0.0.3.tgz"
+  integrity sha512-I4gjN7BZoO1SWvXBTARYGrByvTaItu1KebaHZTcKdAvFcxH3pVNQnGJsRDx39JPc782T//uc6pjQNHYcIKl6Ww==
   dependencies:
     requireindex "^1.2.0"
 
