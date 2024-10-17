@@ -29,6 +29,7 @@ export const CountrySelect = memo(({
 
     return (
         <ListBox
+            className={className}
             onChange={onChangeHandler}
             value={value}
             defaultValue={t('Укажите страну')}
