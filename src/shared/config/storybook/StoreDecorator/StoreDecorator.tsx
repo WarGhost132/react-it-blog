@@ -5,13 +5,14 @@ import { loginReducer } from '@/features/AuthByUsername/testing';
 import { articleDetailsReducer } from '@/entities/Article/testing';
 import { profileReducer } from '@/features/editableProfileCard/testing';
 import { addCommentFormReducer } from '@/features/addCommentForm/testing';
+import { articleDetailsPageReducer } from '@/pages/ArticleDetailsPage/testing';
 
 const defaultAsyncReducers: ReducersList = {
     loginForm: loginReducer,
     profile: profileReducer,
     articleDetails: articleDetailsReducer,
     addCommentForm: addCommentFormReducer,
-    articleDetailsPage: articleDetailsReducer,
+    articleDetailsPage: articleDetailsPageReducer,
 };
 
 export const StoreDecorator = (state: DeepPartial<StateSchema>, asyncReducers?: ReducersList) => (StoryComponent: Story) => (
