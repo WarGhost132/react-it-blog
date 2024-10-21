@@ -9,7 +9,7 @@
         "start:dev": "concurrently \"npm start\" \"npm run start:dev:server\"",
         "start:dev:vite": "concurrently \"npm run start:vite\" \"npm run start:dev:server\"",
         "start:dev:server": "node ./json-server/index.js",
-        "build:prod": "webpack  --env mode=production apiUrl=https://my-production-server.vercel.app/",
+        "build:prod": "webpack  --env mode=production apiUrl=https://my-production-server-warghost132-konstantins-projects-e1129db7.vercel.app",
         "build:dev": "webpack  --env mode=development",
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
@@ -25,8 +25,7 @@
         "storybook": "start-storybook -p 6006 -c ./config/storybook",
         "storybook:build": "build-storybook -c ./config/storybook",
         "prepare": "husky install",
-        "generate:slice": "node ./scripts/createSlice/index.js",
-        "postinstall": "rmdir /s /q .\\node_modules\\.cache"
+        "generate:slice": "node ./scripts/createSlice/index.js"
     },
     "lint-staged": {
         "**/*.{ts,tsx}": "eslint"
