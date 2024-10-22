@@ -522,7 +522,7 @@
       ]
     },
     {
-      "id": "18",
+      "id": "19",
       "title": "Научная статья - Биология",
       "subtitle": "БиологиЯ",
       "img": "https://yandex-images.clstorage.net/vl9Q74Z19/cf01df8jcOW/tSyAGf2mVeWyKRm0CKhwPc4iO3i-7pNR9TG4f8hbGUmVWXXRuMhiTLkZE4fuxBC5Hmx3GVRTx7K4-4AEuh6WxuB8QQis48MwYm8MoV895O2Ltel_7myFUvD1qWiN2Q0N0Y1jAe8e9BhtAMma5hiKZ1JmqlIeQQaneWyTFqvbTBzlZwXROnlbqDC2UjhGYD_wUeu_eaElAtfyZirpw9fNzANBoAh5lCoCPMoAG2TZCCgUr6JSV4oLaD2o1Aej084Tf2FIkfC012A385X5Aiz3MFhk_HfuYIwYOONt7I7Sh4rMDOKGe1hniLxKS5kjmcCm0GYrHJFPjWX6JRADLNqK0_ysyR2y_xCq-r6bvMCleHDZavE5KCWFUP7mLK6ClMVPSgliRXIVI4W6ws-b6tKM4BukJpUZhYNiey_QDeeTy5q5qwnfPTCbrb-7FnICKTx_EeT6fezgiJZ8oKSsy5iNRQ3JY001X6kJc0_PW6jShqwVriAW2cVH5b3hlsFk3QITcSgOWDI3VGo_O5S2wOz4sxxs8D4v5Q5Xv2Bt4QMZDQuAyOQJ8RkgxPwPx5HsW8_kGyRgFJ8OCuaxJ9kJ45QPlTCqBFW9NFCve3FaNQ2h_Pac5Pw1J6ZOX_HoYWvNkAsMSU_piTmVoQW9xU0W7FwPaNBn51xQhAyv_C7eDKTSCVJ3LQCfPLGV6Piz2faIIfK7FWS7dK1uAdr1ZWdiANaBCsKBqYm7U-6BPYIHkOVcgK0fKWYe04WNbXAo1sQs3oAT8CyFX7c1Em26sJ1wzqM585ThO3BmqM6WvGYvZsvezgmEwWRDtFTnifTJh9fqWwYt3WZqU19KzOlwqRaN5BpNWvMkDZ489RXlevfddQepMvuTqvh47i9HWvalrilD2YTBQE5iDTDUoYSzB4_Z7hQIqhCma9ReC0UvcSdfyWUTyZL0pAiUszyWZrr6Uz4O6jC10Wx2tWAvSdk_5OUgyc",
@@ -544,6 +544,19 @@
           ]
         }
       ]
+    },
+    {
+      "title": "Научная статья - Биология",
+      "subtitle": "БиологиЯ",
+      "img": "https://yandex-images.clstorage.net/vl9Q74Z19/cf01df8jcOW/tSyAGf2mVeWyKRm0CKhwPc4iO3i-7pNR9TG4f8hbGUmVWXXRuMhiTLkZE4fuxBC5Hmx3GVRTx7K4-4AEuh6WxuB8QQis48MwYm8MoV895O2Ltel_7myFUvD1qWiN2Q0N0Y1jAe8e9BhtAMma5hiKZ1JmqlIeQQaneWyTFqvbTBzlZwXROnlbqDC2UjhGYD_wUeu_eaElAtfyZirpw9fNzANBoAh5lCoCPMoAG2TZCCgUr6JSV4oLaD2o1Aej084Tf2FIkfC012A385X5Aiz3MFhk_HfuYIwYOONt7I7Sh4rMDOKGe1hniLxKS5kjmcCm0GYrHJFPjWX6JRADLNqK0_ysyR2y_xCq-r6bvMCleHDZavE5KCWFUP7mLK6ClMVPSgliRXIVI4W6ws-b6tKM4BukJpUZhYNiey_QDeeTy5q5qwnfPTCbrb-7FnICKTx_EeT6fezgiJZ8oKSsy5iNRQ3JY001X6kJc0_PW6jShqwVriAW2cVH5b3hlsFk3QITcSgOWDI3VGo_O5S2wOz4sxxs8D4v5Q5Xv2Bt4QMZDQuAyOQJ8RkgxPwPx5HsW8_kGyRgFJ8OCuaxJ9kJ45QPlTCqBFW9NFCve3FaNQ2h_Pac5Pw1J6ZOX_HoYWvNkAsMSU_piTmVoQW9xU0W7FwPaNBn51xQhAyv_C7eDKTSCVJ3LQCfPLGV6Piz2faIIfK7FWS7dK1uAdr1ZWdiANaBCsKBqYm7U-6BPYIHkOVcgK0fKWYe04WNbXAo1sQs3oAT8CyFX7c1Em26sJ1wzqM585ThO3BmqM6WvGYvZsvezgmEwWRDtFTnifTJh9fqWwYt3WZqU19KzOlwqRaN5BpNWvMkDZ489RXlevfddQepMvuTqvh47i9HWvalrilD2YTBQE5iDTDUoYSzB4_Z7hQIqhCma9ReC0UvcSdfyWUTyZL0pAiUszyWZrr6Uz4O6jC10Wx2tWAvSdk_5OUgyc",
+      "views": 1022,
+      "createdAt": "26.02.2022",
+      "userId": "1",
+      "type": [
+        "SCIENCE"
+      ],
+      "blocks": [],
+      "id": "lBSJxiU"
     }
   ],
   "comments": [
@@ -650,6 +663,17 @@
       "id": "2",
       "first": "Адам",
       "lastname": "Френсис",
+      "age": 22,
+      "currency": "RUB",
+      "country": "Kazahstan",
+      "city": "Kazan",
+      "username": "user-tet",
+      "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
+    },
+    {
+      "id": "4",
+      "first": "test",
+      "lastname": "user",
       "age": 22,
       "currency": "RUB",
       "country": "Kazahstan",
