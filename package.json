@@ -12,6 +12,7 @@
         "build:prod": "webpack  --env mode=production apiUrl=https://my-production-server-warghost132-konstantins-projects-e1129db7.vercel.app",
         "build:dev": "webpack  --env mode=development",
         "lint:ts": "eslint \"**/*.{ts,tsx}\"",
+        "prettier": "npx prettier --write **/*.{ts,tsx,json}",
         "lint:ts:fix": "eslint \"**/*.{ts,tsx}\" --fix",
         "lint:scss": "npx stylelint \"**/*.scss\"",
         "lint:scss:fix": "npx stylelint \"**/*.scss\" --fix",
@@ -29,7 +30,10 @@
         "generate:slice": "node ./scripts/createSlice/index.js"
     },
     "lint-staged": {
-        "**/*.{ts,tsx}": "eslint"
+        "**/*.{ts,tsx}": [
+            "prettier --list-different",
+            "eslint"
+        ]
     },
     "keywords": [],
     "author": "",
@@ -75,6 +79,7 @@
         "cypress": "^13.15.0",
         "eslint": "^8.10.0",
         "eslint-config-airbnb": "^19.0.4",
+        "eslint-config-prettier": "^9.1.0",
         "eslint-plugin-i18next": "^5.1.2",
         "eslint-plugin-import": "^2.25.4",
         "eslint-plugin-jsx-a11y": "^6.5.1",
@@ -94,6 +99,7 @@
         "lint-staged": "^13.0.3",
         "loki": "^0.28.1",
         "mini-css-extract-plugin": "^2.5.3",
+        "prettier": "3.3.3",
         "react-refresh": "^0.12.0",
         "reg-cli": "^0.17.6",
         "regenerator-runtime": "^0.13.9",

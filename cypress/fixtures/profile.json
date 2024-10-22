@@ -1,11 +1,11 @@
 {
-  "id": "1",
-  "first": "test",
-  "lastname": "user",
-  "age": 22,
-  "currency": "RUB",
-  "country": "Kazahstan",
-  "city": "Kazan",
-  "username": "user-tet",
-  "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
+    "id": "1",
+    "first": "test",
+    "lastname": "user",
+    "age": 22,
+    "currency": "RUB",
+    "country": "Kazahstan",
+    "city": "Kazan",
+    "username": "user-tet",
+    "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
 }
