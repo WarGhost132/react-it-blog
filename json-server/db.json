@@ -575,6 +575,9 @@
             "username": "admin",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": true
+            },
             "avatar": "https://i.pinimg.com/originals/68/89/4b/68894b8ec941027bb8e48aa30abb9b88.jpg"
         },
         {
@@ -582,6 +585,9 @@
             "username": "user",
             "password": "123",
             "roles": ["USER"],
+            "features": {
+                "isArticleRatingEnabled": false
+            },
             "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
         },
         {
@@ -589,6 +595,9 @@
             "username": "manager",
             "password": "123",
             "roles": ["MANAGER"],
+            "features": {
+                "isArticleRatingEnabled": true
+            },
             "avatar": "https://xakep.ru/wp-content/uploads/2018/05/171485/KuroiSH-hacker.jpg"
         },
         {
@@ -596,6 +605,9 @@
             "username": "testuser",
             "password": "123",
             "roles": ["ADMIN"],
+            "features": {
+                "isArticleRatingEnabled": true
+            },
             "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
         }
     ],
