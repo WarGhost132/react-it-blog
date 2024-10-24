@@ -576,12 +576,14 @@
             "password": "123",
             "roles": ["ADMIN"],
             "features": {
-                "isArticleRatingEnabled": true
+                "isArticleRatingEnabled": true,
+                "isAppRedesigned": true
             },
             "jsonSettings": {
                 "theme": "app_dark_theme",
                 "isFirstVisit": true,
-                "settingsPageHasBeenOpen": false
+                "settingsPageHasBeenOpen": false,
+                "isArticlesPageWasOpen": true
             },
             "avatar": "https://i.pinimg.com/originals/68/89/4b/68894b8ec941027bb8e48aa30abb9b88.jpg"
         },
@@ -596,7 +598,8 @@
             "jsonSettings": {
                 "theme": "app_dark_theme",
                 "isFirstVisit": true,
-                "settingsPageHasBeenOpen": false
+                "settingsPageHasBeenOpen": false,
+                "isArticlesPageWasOpen": true
             },
             "avatar": "https://i.pinimg.com/originals/d1/a4/31/d1a4317c9cb787fdc0526e7a44881421.jpg"
         },
