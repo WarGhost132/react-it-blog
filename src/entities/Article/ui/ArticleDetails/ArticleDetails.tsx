@@ -1,6 +1,7 @@
 import { useTranslation } from 'react-i18next';
 import { memo, useCallback, useEffect } from 'react';
 import { useSelector } from 'react-redux';
+import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import {
     DynamicModuleLoader,
     ReducersList,
@@ -24,7 +25,6 @@ import { ArticleImageBlockComponent } from '../ArticleImageBlockComponent/Articl
 import { ArticleTextBlockComponent } from '../ArticleTextBlockComponent/ArticleTextBlockComponent';
 import { Skeleton } from '@/shared/ui/deprecated/Skeleton';
 import { Text, TextAlign, TextSize } from '@/shared/ui/deprecated/Text';
-import { HStack, VStack } from '@/shared/ui/deprecated/Stack';
 import { Avatar } from '@/shared/ui/deprecated/Avatar';
 import { Icon } from '@/shared/ui/deprecated/Icon';
 

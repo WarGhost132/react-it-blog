@@ -1,8 +1,8 @@
 import { useSelector } from 'react-redux';
 import { useTranslation } from 'react-i18next';
 import { memo, Suspense, useCallback } from 'react';
+import { VStack } from '@/shared/ui/redesigned/Stack';
 import { Text, TextSize } from '@/shared/ui/deprecated/Text';
-import { VStack } from '@/shared/ui/deprecated/Stack';
 import { Loader } from '@/shared/ui/deprecated/Loader';
 import { classNames } from '@/shared/lib/classNames/classNames';
 import { CommentList } from '@/entities/Comment';
