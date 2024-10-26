@@ -19,13 +19,6 @@ import {
 } from '@/shared/const/router';
 import { toggleFeatures } from '@/shared/lib/features';
 
-{
-    MainIcon;
-    ArticleIcon;
-    AboutIcon;
-    ProfileIcon;
-}
-
 export const getSidebarItems = createSelector(getUserAuthData, (userData) => {
     const sidebarItemsList: SidebarItemType[] = [
         {

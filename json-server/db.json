@@ -672,7 +672,8 @@
         "ADMIN"
       ],
       "features": {
-        "isArticleRatingEnabled": true
+        "isArticleRatingEnabled": true,
+        "isAppRedesigned": true
       },
       "jsonSettings": {
         "theme": "app_dark_theme",
@@ -745,6 +746,12 @@
       "rate": 5,
       "feedback": "Это самая лучшая статья!",
       "id": "MmxuFkf"
+    },
+    {
+      "userId": "1",
+      "articleId": "7",
+      "rate": 5,
+      "id": "OPQlI-i"
     }
   ],
   "profile-ratings": [
