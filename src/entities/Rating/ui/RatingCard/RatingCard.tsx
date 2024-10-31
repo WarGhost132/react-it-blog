@@ -196,7 +196,7 @@ export const RatingCard = memo((props: RatingCardProps) => {
             feature="isAppRedesigned"
             on={
                 <Card
-                    border="round"
+                    border="partial"
                     padding="24"
                     className={className}
                     max
