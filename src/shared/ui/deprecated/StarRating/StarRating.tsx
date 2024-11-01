@@ -15,10 +15,6 @@ interface StarRatingProps {
 
 const stars = [1, 2, 3, 4, 5];
 
-/**
- * Устарел, используем новые компоненты из папки redesigned
- * @deprecated
- */
 export const StarRating = memo((props: StarRatingProps) => {
     const { className, size = 30, selectedStars = 0, onSelect } = props;
     const [currentStarsCount, setCurrentStarsCount] = useState(selectedStars);
@@ -68,7 +64,6 @@ export const StarRating = memo((props: StarRatingProps) => {
                         ],
                     ),
                     Svg: StarIcon,
-                    key: starNumber,
                     width: size,
                     height: size,
                     onMouseLeave: onLeave,
@@ -79,9 +74,21 @@ export const StarRating = memo((props: StarRatingProps) => {
                 };
                 return (
                     <ToggleFeatures
+                        key={`toggle-feature-${starNumber}`}
                         feature="isAppRedesigned"
-                        on={<Icon clickable={!isSelected} {...commonProps} />}
-                        off={<IconDeprecated {...commonProps} />}
+                        on={
+                            <Icon
+                                key={`star-icon-${starNumber}`}
+                                clickable={!isSelected}
+                                {...commonProps}
+                            />
+                        }
+                        off={
+                            <IconDeprecated
+                                key={`star-icon-deprecated-${starNumber}`}
+                                {...commonProps}
+                            />
+                        }
                     />
                 );
             })}

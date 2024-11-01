@@ -1,4 +1,3 @@
-import { useTranslation } from 'react-i18next';
 import { memo } from 'react';
 import { Text as TextDeprecated } from '@/shared/ui/deprecated/Text';
 import { Text } from '@/shared/ui/redesigned/Text';
@@ -15,7 +14,6 @@ interface ArticleTextBlockComponentProps {
 export const ArticleTextBlockComponent = memo(
     (props: ArticleTextBlockComponentProps) => {
         const { className, block } = props;
-        const { t } = useTranslation();
 
         return (
             <div
@@ -37,6 +35,7 @@ export const ArticleTextBlockComponent = memo(
                 )}
                 {block.paragraphs.map((paragraph, index) => (
                     <ToggleFeatures
+                        key={index}
                         feature="isAppRedesigned"
                         on={
                             <Text
