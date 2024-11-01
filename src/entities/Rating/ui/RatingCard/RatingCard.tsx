@@ -1,8 +1,8 @@
 import { memo, useCallback, useState } from 'react';
 import { useTranslation } from 'react-i18next';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { Modal } from 'src/shared/ui/redesigned/Modal';
-import { Drawer } from 'src/shared/ui/redesigned/Drawer';
+import { Modal } from '@/shared/ui/redesigned/Modal';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import { HStack, VStack } from '@/shared/ui/redesigned/Stack';
 import { Card as CardDeprecated } from '@/shared/ui/deprecated/Card';
 import {

@@ -1,6 +1,6 @@
 import React, { memo, useCallback, useState } from 'react';
 import { BrowserView, MobileView } from 'react-device-detect';
-import { Drawer } from 'src/shared/ui/redesigned/Drawer';
+import { Drawer } from '@/shared/ui/redesigned/Drawer';
 import {
     Button as ButtonDeprecated,
     ButtonTheme,
