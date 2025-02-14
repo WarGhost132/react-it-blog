@@ -1,0 +1,3 @@
+{
+    "i18next.i18nPaths": "f:/practice/React/production-project/build/locales,f:/practice/React/production-project/public/locales,f:/practice/React/production-project/src/shared/config/i18n"
+}
